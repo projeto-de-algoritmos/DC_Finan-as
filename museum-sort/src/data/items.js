@@ -1,26 +1,17 @@
 // value: representa o valor em dólares
 // space: representa o espaço que o item ocupa em metros cúbicos
+// popularity: uma nota de 1 a 5 que representa a popularidade do item
+// date: representa a data em que o objeto foi criado
+
 export const items = [
-  {
-    id: 28,
-    image: '31.png',
-    name: 'Romero britto original',
-    value: 140000,
-    space: 1,
-  },
   {
     id: 1,
     image: '1.png',
     name: 'Escultura de cavalo',
     value: 300,
     space: 1,
-  },
-  {
-    id: 5,
-    image: '5.png',
-    name: 'Vestido da rainha',
-    value: 28000,
-    space: 2,
+    popularity: 1,
+    yearsOld: 20,
   },
   {
     id: 2,
@@ -28,6 +19,8 @@ export const items = [
     name: 'Escultura faraó',
     value: 1000,
     space: 1,
+    popularity: 3,
+    yearsOld: 5000,
   },
   {
     id: 3,
@@ -35,6 +28,8 @@ export const items = [
     name: 'Candelabro de ouro',
     value: 10000,
     space: 1,
+    popularity: 3,
+    yearsOld: 200,
   },
   {
     id: 4,
@@ -42,13 +37,17 @@ export const items = [
     name: 'Trono de ouro',
     value: 10000000,
     space: 5,
+    popularity: 5,
+    yearsOld: 1000,
   },
   {
-    id: 7,
-    image: '7.png',
-    name: 'Relógio antigo',
-    value: 2000,
+    id: 5,
+    image: '5.png',
+    name: 'Vestido da rainha',
+    value: 28000,
     space: 2,
+    popularity: 5,
+    yearsOld: 300,
   },
   {
     id: 6,
@@ -56,6 +55,17 @@ export const items = [
     name: 'Lâmpada mágica',
     value: 16000,
     space: 1,
+    popularity: 4,
+    yearsOld: 3000,
+  },
+  {
+    id: 7,
+    image: '7.png',
+    name: 'Relógio antigo',
+    value: 2000,
+    space: 2,
+    popularity: 4,
+    yearsOld: 430,
   },
   {
     id: 8,
@@ -63,13 +73,8 @@ export const items = [
     name: 'Vaso egipcio',
     value: 4000,
     space: 3,
-  },
-  {
-    id: 24,
-    image: '26.png',
-    name: 'Escultura grega',
-    value: 50000,
-    space: 9,
+    popularity: 4,
+    yearsOld: 5003,
   },
   {
     id: 9,
@@ -77,13 +82,8 @@ export const items = [
     name: 'Vaso florido',
     value: 100,
     space: 2,
-  },
-  {
-    id: 30,
-    image: '33.png',
-    name: 'Crânio de dinossauro',
-    value: 800000,
-    space: 12
+    popularity: 2,
+    yearsOld: 45,
   },
   {
     id: 10,
@@ -91,6 +91,8 @@ export const items = [
     name: 'Armário antigo',
     value: 5000,
     space: 5,
+    popularity: 3,
+    yearsOld: 100,
   },
   {
     id: 11,
@@ -98,6 +100,8 @@ export const items = [
     name: 'Coroa dourada',
     value: 100000,
     space: 1,
+    popularity: 5,
+    yearsOld: 550,
   },
   {
     id: 12,
@@ -105,6 +109,8 @@ export const items = [
     name: 'Violino',
     value: 5000,
     space: 2,
+    popularity: 3.1,
+    yearsOld: 140,
   },
   {
     id: 13,
@@ -112,6 +118,8 @@ export const items = [
     name: 'Espada',
     value: 1000,
     space: 1,
+    popularity: 2,
+    yearsOld: 660,
   },
   {
     id: 14,
@@ -119,6 +127,8 @@ export const items = [
     name: 'Escudo',
     value: 15000,
     space: 2,
+    popularity: 4,
+    yearsOld: 700,
   },
   {
     id: 15,
@@ -126,6 +136,8 @@ export const items = [
     name: 'Escultura cupido',
     value: 5000,
     space: 6,
+    popularity: 3,
+    yearsOld: 1000,
   },
   {
     id: 16,
@@ -133,20 +145,18 @@ export const items = [
     name: 'Livro antigo',
     value: 15000,
     space: 1,
+    popularity: 1,
+    yearsOld: 204,
   },
-  {
-    id: 26,
-    image: '28.png',
-    name: 'Quadro do Picasso',
-    value: 600000,
-    space: 2,
-  },
+
   {
     id: 17,
     image: '19.png',
     name: 'Máscara antiga',
     value: 700,
     space: 1,
+    popularity: 4,
+    yearsOld: 500,
   },
   {
     id: 18,
@@ -154,20 +164,18 @@ export const items = [
     name: 'Estátua de Buda',
     value: 4900,
     space: 5,
+    popularity: 5,
+    yearsOld: 154,
   },
-  {
-    id: 29,
-    image: '32.png',
-    name: 'Estátua de Poseidon',
-    value: 2000000,
-    space: 9
-  },
+
   {
     id: 19,
     image: '21.png',
     name: 'Estátua de arqueiro',
     value: 4900,
     space: 4,
+    popularity: 1,
+    yearsOld: 236,
   },
   {
     id: 20,
@@ -175,13 +183,8 @@ export const items = [
     name: 'Máscara de porcelana',
     value: 150,
     space: 1,
-  },
-  {
-    id: 27,
-    image: '30.png',
-    name: 'Mona lisa',
-    value: 790000000,
-    space: 2,
+    popularity: 4,
+    yearsOld: 349,
   },
   {
     id: 21,
@@ -189,6 +192,8 @@ export const items = [
     name: 'Estátua de veado',
     value: 1000,
     space: 5,
+    popularity: 2,
+    yearsOld: 380,
   },
   {
     id: 22,
@@ -196,6 +201,8 @@ export const items = [
     name: 'Macaco pensante',
     value: 200,
     space: 4,
+    popularity: 2,
+    yearsOld: 14,
   },
   {
     id: 23,
@@ -203,6 +210,17 @@ export const items = [
     name: 'O pensador',
     value: 1000000,
     space: 10,
+    popularity: 5,
+    yearsOld: 207,
+  },
+  {
+    id: 24,
+    image: '26.png',
+    name: 'Escultura grega',
+    value: 50000,
+    space: 9,
+    popularity: 5,
+    yearsOld: 1000,
   },
   {
     id: 25,
@@ -210,5 +228,52 @@ export const items = [
     name: 'Quadro do Picasso',
     value: 500000,
     space: 2,
+    popularity: 4,
+    yearsOld: 56,
+  },
+  {
+    id: 26,
+    image: '28.png',
+    name: 'Quadro do Picasso',
+    value: 600000,
+    space: 2,
+    popularity: 5,
+    yearsOld: 57,
+  },
+  {
+    id: 27,
+    image: '30.png',
+    name: 'Mona lisa',
+    value: 790000000,
+    space: 2,
+    popularity: 5,
+    yearsOld: 518,
+  },
+  {
+    id: 28,
+    image: '31.png',
+    name: 'Romero britto original',
+    value: 140000,
+    space: 1,
+    popularity: 3,
+    yearsOld: 10,
+  },
+  {
+    id: 29,
+    image: '32.png',
+    name: 'Estátua de Poseidon',
+    value: 2000000,
+    space: 9,
+    popularity: 4,
+    yearsOld: 500,
+  },
+  {
+    id: 30,
+    image: '33.png',
+    name: 'Crânio de dinossauro',
+    value: 800000,
+    space: 12,
+    popularity: 5,
+    yearsOld: 5000000,
   },
 ];
