@@ -1,11 +1,6 @@
-import './App.css';
+import Routes from './routes';
+import './global.css';
 
-const App = () => {
-  return (
-    <div className="App">
-      <h1>Finance</h1>
-    </div>
-  );
-};
+const App = () => <Routes />
 
 export default App;
