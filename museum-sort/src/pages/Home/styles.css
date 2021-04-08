@@ -1,0 +1,98 @@
+#home-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#home-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-title {
+  color: #fff;
+  margin-top: 1.875rem;
+  font-size: 3rem;
+}
+
+#home-text {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+#home-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-thief-container {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 25rem;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+#home-thief-image {
+  width: 20rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+#select-vehicle-box select {
+  background: url('../../assets/expand_more-24px.svg') no-repeat;
+  background-color: #3d4660;
+  background-position: 205px center;
+  width: 250px;
+  height: 48px;
+  font-family: 'Nunito';
+  font-size: 18px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+#select-vehicle-box {
+  width: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#home-button {
+  width: 250px;
+  height: 40px;
+  margin-top: 30px;
+  border: 0;
+  cursor: pointer;
+  background: #5c83cf;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
