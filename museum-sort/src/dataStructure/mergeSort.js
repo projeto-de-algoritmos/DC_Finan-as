@@ -4,9 +4,9 @@ export const mergeSort = (array, typeParam) => {
     var indexLeft = 0;
     var indexRight = 0;
 
-    if (typeParam === 'date') {
+    if (typeParam === 'yearsOld') {
       while (indexLeft < left.length && indexRight < right.length) {
-        if (left[indexLeft].date < right[indexRight].date) {
+        if (left[indexLeft].yearsOld < right[indexRight].yearsOld) {
           result.push(left[indexLeft++]);
         } else {
           result.push(right[indexRight++]);
@@ -15,6 +15,22 @@ export const mergeSort = (array, typeParam) => {
     } else if (typeParam === 'value') {
       while (indexLeft < left.length && indexRight < right.length) {
         if (left[indexLeft].value < right[indexRight].value) {
+          result.push(left[indexLeft++]);
+        } else {
+          result.push(right[indexRight++]);
+        }
+      }
+    } else if (typeParam === 'space') {
+      while (indexLeft < left.length && indexRight < right.length) {
+        if (left[indexLeft].space < right[indexRight].space) {
+          result.push(left[indexLeft++]);
+        } else {
+          result.push(right[indexRight++]);
+        }
+      }
+    } else if (typeParam === 'popularity') {
+      while (indexLeft < left.length && indexRight < right.length) {
+        if (left[indexLeft].popularity < right[indexRight].popularity) {
           result.push(left[indexLeft++]);
         } else {
           result.push(right[indexRight++]);
