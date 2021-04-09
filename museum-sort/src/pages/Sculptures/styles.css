@@ -4,14 +4,14 @@
 }
 
 #sculptures-header {
-  height: 15rem;
+  /* height: 15rem; */
   background-color: #171717;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8rem;
+  padding: 1.25rem 8rem;
 }
 
 #sculptures-title {
@@ -25,13 +25,13 @@
 }
 
 #sculptures-button {
-  width: 250px;
-  height: 40px;
-  margin-top: 30px;
+  width: 15.625rem;
+  height: 2.5rem;
+  margin-top: 1.875rem;
   border: 0;
   cursor: pointer;
   background: #5c83cf;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   color: #ffffff;
   font-weight: 800;
 
@@ -42,9 +42,33 @@
   transition: background-color 0.2s;
 }
 
+#modal-title {
+  color: #39393A;
+}
+
+#modal-options {
+  color: #5c83cf;
+}
+
+#filter-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#filter-button {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  background: none;
+  margin-top: 0.625rem;
+}
+
 #sculptures-quantity-container,
 #sculptures-result-value-container,
-#sculptures-result-quantity-container {
+#sculptures-result-quantity-container,
+#sculptures-type-filter-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,13 +77,15 @@
 #sculptures-subtitle,
 #sculptures-result-title,
 #sculptures-result-subtitle,
-#sculptures-result-quantity {
+#sculptures-result-quantity,
+#sculptures-type-filter-title {
   color: #fff;
   margin-top: 1rem;
 }
 
 #sculptures-result-value,
-#sculptures-result-quantity {
+#sculptures-result-quantity,
+#sculptures-type-filter-value {
   color: #66cf5c;
   margin-top: 1rem;
   margin-left: 1rem;

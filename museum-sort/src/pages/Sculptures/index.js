@@ -2,13 +2,36 @@ import React, { useState } from 'react';
 import { items } from '../../data/items.js';
 import { vehicles } from '../../data/vehicles.js';
 import { knapsack } from '../../dataStructure/knapsack.js';
+import { mergeSort } from '../../dataStructure/mergeSort.js';
+import Modal from 'react-modal';
 import './styles.css';
 
 const Sculptures = (props) => {
   const [targets, setTargets] = useState([]);
+  const [itemsSorted, setItemsSorted] = useState(items);
   const [totalValue, setTotalValue] = useState(0);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const vehicleId = props.match.params.id;
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+    },
+  };
 
   const formatPrice = (price) => {
     const formatter = new Intl.NumberFormat('en-US', {
@@ -29,6 +52,61 @@ const Sculptures = (props) => {
             <h2 id="sculptures-subtitle">Total:</h2>
             <h2 id="sculptures-quantity-items">{items.length}</h2>
           </div>
+
+          <button id="sculptures-button" onClick={openModal}>
+            <h1>Filtrar</h1>
+          </button>
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Ordenar por"
+          >
+            <h2 id="modal-title">Escolha um Método de Ordenação</h2>
+
+            <div id="filter-button-container">
+              <button
+                id="filter-button"
+                onClick={() => {
+                  const response = mergeSort(items, 'yearsOld');
+                  setItemsSorted(response);
+                  closeModal();
+                }}
+              >
+                <h3 id="modal-options">Idade do item</h3>
+              </button>
+              <button
+                id="filter-button"
+                onClick={() => {
+                  const response = mergeSort(items, 'value');
+                  setItemsSorted(response);
+                  closeModal();
+                }}
+              >
+                <h3 id="modal-options">Preço</h3>
+              </button>
+              <button
+                id="filter-button"
+                onClick={() => {
+                  const response = mergeSort(items, 'space');
+                  setItemsSorted(response);
+                  closeModal();
+                }}
+              >
+                <h3 id="modal-options">Espaço ocupado</h3>
+              </button>
+              <button
+                id="filter-button"
+                onClick={() => {
+                  const response = mergeSort(items, 'popularity');
+                  setItemsSorted(response);
+                  closeModal();
+                }}
+              >
+                <h3 id="modal-options">Popularidade</h3>
+              </button>
+            </div>
+          </Modal>
         </div>
 
         <div id="sculptures-calculate-container">
@@ -57,7 +135,7 @@ const Sculptures = (props) => {
       </header>
 
       <section id="sculptures-items-container">
-        {items.map((item) => (
+        {itemsSorted.map((item) => (
           <div
             id={
               targets.includes(item)
