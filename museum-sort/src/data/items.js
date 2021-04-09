@@ -1,7 +1,7 @@
 // value: representa o valor em dólares
 // space: representa o espaço que o item ocupa em metros cúbicos
 // popularity: uma nota de 1 a 5 que representa a popularidade do item
-// date: representa a data em que o objeto foi criado
+// yearsOld: representa quantos anos o objeto possui desde a sua criação
 
 export const items = [
   {
