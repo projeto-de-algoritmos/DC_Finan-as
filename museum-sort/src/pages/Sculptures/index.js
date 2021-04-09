@@ -3,6 +3,7 @@ import { items } from '../../data/items.js';
 import { vehicles } from '../../data/vehicles.js';
 import { knapsack } from '../../dataStructure/knapsack.js';
 import { mergeSort } from '../../dataStructure/mergeSort.js';
+import FilterIcon from '../../assets/filter_list_black_24dp.svg';
 import Modal from 'react-modal';
 import './styles.css';
 
@@ -54,8 +55,9 @@ const Sculptures = (props) => {
             <h2 id="sculptures-quantity-items">{items.length}</h2>
           </div>
 
-          <button id="sculptures-button" onClick={openModal}>
-            <h1>Filtrar</h1>
+          <button id="sculptures-filter-button" onClick={openModal}>
+            <img id="sculptures-filter-button-icon" src={FilterIcon} alt="Icon Filter" />
+            <h1 id="sculptures-filter-button-title">Filtrar</h1>
           </button>
           <Modal
             isOpen={modalIsOpen}
@@ -128,7 +130,7 @@ const Sculptures = (props) => {
           </button>
 
           <div id="sculptures-result-value-container">
-            <h1 id="sculptures-result-title">Melhor Valor:</h1>
+            <h2 id="sculptures-result-title">Melhor Valor:</h2>
             <h2 id="sculptures-result-value">{formatPrice(totalValue)}</h2>
           </div>
 
@@ -154,8 +156,22 @@ const Sculptures = (props) => {
             }
             key={item.id}
           >
-            <h2>{item.name}</h2>
-            <p>Valor: {formatPrice(item.value)}</p>
+            <h2 id="sculptures-items-card-title">{item.name}</h2>
+
+            <div id="sculptures-items-card-info-container">
+              <p id="sculptures-items-card-info">
+                Valor: {formatPrice(item.value)}
+              </p>
+              <p id="sculptures-items-card-info">
+                Popularidade: {item.popularity}
+              </p>
+              <p id="sculptures-items-card-info">
+                Tempo de existência: {item.yearsOld} anos
+              </p>
+              <p id="sculptures-items-card-info">
+                Espaço ocupado: {item.space} metros cúbicos
+              </p>
+            </div>
 
             <div id="sculptures-image-container">
               <img

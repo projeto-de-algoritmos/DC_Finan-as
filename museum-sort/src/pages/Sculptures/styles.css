@@ -24,6 +24,35 @@
   margin-left: 1rem;
 }
 
+#sculptures-filter-button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  margin-top: 1rem;
+  color: #5c83cf;
+
+  transition: color 0.2s;
+}
+
+#sculptures-filter-button:hover {
+  color: #385da5;
+}
+
+#sculptures-filter-button-title {
+  margin-left: 0.5rem;
+}
+
+#sculptures-filter-button-icon {
+  width: 2rem;
+}
+
 #sculptures-button {
   width: 15.625rem;
   height: 2.5rem;
@@ -42,12 +71,20 @@
   transition: background-color 0.2s;
 }
 
+#sculptures-button:hover {
+  background: #385da5;
+}
+
 #modal-title {
   color: #39393A;
 }
 
 #modal-options {
   color: #5c83cf;
+}
+
+#modal-options:hover {
+  color: #385da5;
 }
 
 #filter-button-container {
@@ -101,11 +138,23 @@
 #sculptures-items-card,
 #sculptures-items-card-target {
   width: 25rem;
-  height: 15rem;
   background-color: #5c83cf;
   margin: 2rem;
   padding: 1rem;
   border-radius: 1rem;
+}
+
+#sculptures-items-card-title {
+  color: #171717;
+}
+
+#sculptures-items-card-info-container {
+  margin: 0.6rem 0;
+}
+
+#sculptures-items-card-info {
+  color: #242424;
+  margin: 0.2rem 0;
 }
 
 #sculptures-items-card-target {
