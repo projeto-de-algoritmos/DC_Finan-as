@@ -9,6 +9,7 @@ import './styles.css';
 const Sculptures = (props) => {
   const [targets, setTargets] = useState([]);
   const [itemsSorted, setItemsSorted] = useState(items);
+  const [typeFilter, setTypeFilter] = useState('sem filtro');
   const [totalValue, setTotalValue] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -70,6 +71,7 @@ const Sculptures = (props) => {
                 onClick={() => {
                   const response = mergeSort(items, 'yearsOld');
                   setItemsSorted(response);
+                  setTypeFilter('Idade');
                   closeModal();
                 }}
               >
@@ -80,6 +82,7 @@ const Sculptures = (props) => {
                 onClick={() => {
                   const response = mergeSort(items, 'value');
                   setItemsSorted(response);
+                  setTypeFilter('Preço');
                   closeModal();
                 }}
               >
@@ -90,6 +93,7 @@ const Sculptures = (props) => {
                 onClick={() => {
                   const response = mergeSort(items, 'space');
                   setItemsSorted(response);
+                  setTypeFilter('Espaço ocupado');
                   closeModal();
                 }}
               >
@@ -100,6 +104,7 @@ const Sculptures = (props) => {
                 onClick={() => {
                   const response = mergeSort(items, 'popularity');
                   setItemsSorted(response);
+                  setTypeFilter('Popularidade');
                   closeModal();
                 }}
               >
@@ -130,6 +135,11 @@ const Sculptures = (props) => {
           <div id="sculptures-result-quantity-container">
             <h2 id="sculptures-result-subtitle">Quantidade de Itens:</h2>
             <h2 id="sculptures-result-quantity">{targets.length}</h2>
+          </div>
+
+          <div id="sculptures-type-filter-container">
+            <h2 id="sculptures-type-filter-title">Tipo de Filtro:</h2>
+            <h2 id="sculptures-type-filter-value">{typeFilter}</h2>
           </div>
         </div>
       </header>
