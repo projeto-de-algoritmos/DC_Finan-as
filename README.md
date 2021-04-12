@@ -29,7 +29,7 @@ Nesse módulo, utilizamos o projeto que tinhamos desenvolvido no [módulo anteri
 - Yarn
 
 ### Comandos 
-Para rodar o projeto são necessários apenas dois comandos **(que devem ser rodados na pasta terrorist-network)**:
+Para rodar o projeto são necessários apenas dois comandos **(que devem ser rodados na pasta museum-sort)**:
 1. Para instalar todas as dependencias do projeto.
   > yarn install
 2. Para executar o projeto. 
