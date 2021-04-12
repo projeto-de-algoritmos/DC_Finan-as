@@ -1,46 +1,43 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# MuseumSort
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da dupla**: 4<br>
+**Conteúdo da Disciplina**: DC<br>
 
 ## Alunos
-| Matrícula | Aluno           |
-| --------- | --------------- |
-| xx/xxxxxx | xxxx xxxx xxxxx |
-| xx/xxxxxx | xxxx xxxx xxxxx |
+| Matrícula  | Aluno                         |
+| ---------- | ----------------------------- |
+| 18/0063723 | Fellipe dos Santos Araujo     |
+| 17/0069800 | Ithalo Luiz de Azevedo Mendes |
+
+## Apresentação
+O vídeo da apresentação se encontra na pasta /media.
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Nesse módulo, utilizamos o projeto que tinhamos desenvolvido no [módulo anterior](https://github.com/projeto-de-algoritmos/Greed_ProblemaDoLadrao) e incrementamos nele a funcionalidade de filtragem. Para desenvolver essa nova função, utilizamos do MergeSort. Os artefatos do nosso museu podem ser filtrados por: popularidade, valor, idade e espaço ocupado (em metros cúbicos). 
 
 ## Screenshots
 ![home](assets/home.png)
 ![filtro](assets/filtro1.png)
 ![escolherFiltro](assets/escolherFiltro.png)
 
+
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Javascript<br>
+**Framework**: ReactJS<br>
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+### Pré requisitos
+- Yarn
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+### Comandos 
+Para rodar o projeto são necessários apenas dois comandos **(que devem ser rodados na pasta terrorist-network)**:
+1. Para instalar todas as dependencias do projeto.
+  > yarn install
+2. Para executar o projeto. 
+  > yarn start 
+
+
+
+
 
 
 
