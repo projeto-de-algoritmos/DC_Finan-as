@@ -18,16 +18,18 @@ Temas:
 **Conteúdo da Disciplina**: XXXXXXXXXX<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| Matrícula | Aluno           |
+| --------- | --------------- |
+| xx/xxxxxx | xxxx xxxx xxxxx |
+| xx/xxxxxx | xxxx xxxx xxxxx |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![home](assets/home.png)
+![filtro](assets/filtro1.png)
+![escolherFiltro](assets/escolherFiltro.png)
 
 ## Instalação 
 **Linguagem**: xxxxxx<br>
