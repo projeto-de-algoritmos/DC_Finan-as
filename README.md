@@ -1,7 +1,7 @@
 # MuseumSort
 
 **Número da dupla**: 4<br>
-**Conteúdo da Disciplina**: DC<br>
+**Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
 | Matrícula  | Aluno                         |
